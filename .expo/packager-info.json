@@ -3,5 +3,7 @@
   "packagerPort": 19000,
   "expoServerNgrokUrl": "https://9i-ntd.heartworld.demo04-2-hs-app.exp.direct",
   "packagerNgrokUrl": "https://9i-ntd.heartworld.demo04-2-hs-app.exp.direct",
-  "ngrokPid": 7012
+  "ngrokPid": 11972,
+  "packagerPid": null,
+  "webpackServerPort": null
 }
