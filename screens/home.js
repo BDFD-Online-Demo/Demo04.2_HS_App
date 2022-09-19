@@ -8,13 +8,19 @@
  * Copyright (c) 2022 by BDFD, All Rights Reserved.
  */
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Button } from "react-native";
 import { globalStyles } from "../assets/styles/global";
 
-export default function Home() {
+export default function Home({ navigation }) {
+	const pressHandler = () => {
+		navigation.navigate("ReviewDetails");
+		// navigation.push("ReviewDetails");
+	};
+
 	return (
 		<View style={globalStyles.container}>
 			<Text style={globalStyles.titleText}>Home Screens</Text>
+			<Button title="Go To ReviewDetails Page" onPress={pressHandler} />
 		</View>
 	);
 }
