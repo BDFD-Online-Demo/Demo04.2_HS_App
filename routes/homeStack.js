@@ -2,7 +2,7 @@
  * @Date         : 2022-09-19 12:41:20
  * @Author       : BDFD,bdfd2005@gmail.com
  * @Github       : https://github.com/bdfd
- * @LastEditTime : 2022-09-19 12:56:38
+ * @LastEditTime : 2022-09-19 13:10:45
  * @LastEditors  : BDFD
  * @Description  :
  * @FilePath     : \routes\homeStack.js
@@ -11,13 +11,18 @@
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 import Home from "../screens/home";
-import ReviewDetail from "../screens/reviewDetail";
+import ReviewDetails from "../screens/reviewDetails";
 
 const screens = {
-	Home: { screen: Home },
-	ReviewDetail: { screen: ReviewDetail },
+	ReviewDetails: {
+		screen: ReviewDetails,
+	},
+	Home: {
+		screen: Home,
+	},
 };
 
+// home stack navigator screens
 const HomeStack = createStackNavigator(screens);
 
 export default createAppContainer(HomeStack);
