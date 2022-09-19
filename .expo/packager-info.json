@@ -1,9 +1,9 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19000,
-  "expoServerNgrokUrl": "https://9i-ntd.heartworld.demo04-2-hs-app.exp.direct",
-  "packagerNgrokUrl": "https://9i-ntd.heartworld.demo04-2-hs-app.exp.direct",
-  "ngrokPid": 13844,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "packagerPid": null,
   "webpackServerPort": null
 }
