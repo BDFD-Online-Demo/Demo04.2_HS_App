@@ -14,21 +14,21 @@ import { globalStyles } from "../assets/styles/global";
 export default function Home({ navigation }) {
 	const [reviews, setReviews] = useState([
 		{
-			title: "Zelda, Breath of Fresh Air",
+			title: "Home Page",
 			rating: 5,
-			body: "Iorem Ipsum",
+			body: "This is Home Page",
 			key: "1",
 		},
 		{
-			title: "Gotta Catch Them All(again)",
+			title: "About Us Page",
 			rating: 4,
-			body: "Iorem Ipsum",
+			body: "This is About Us Page",
 			key: "2",
 		},
 		{
-			title: "Not so 'Final' Fantasy",
+			title: "Contact Us Page",
 			rating: 3,
-			body: "Iorem Ipsum",
+			body: "This is About Us Page",
 			key: "3",
 		},
 	]);

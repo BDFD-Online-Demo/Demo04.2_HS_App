@@ -2,7 +2,7 @@
  * @Date         : 2022-09-19 12:41:20
  * @Author       : BDFD,bdfd2005@gmail.com
  * @Github       : https://github.com/bdfd
- * @LastEditTime : 2022-09-19 18:04:29
+ * @LastEditTime : 2022-09-20 17:03:05
  * @LastEditors  : BDFD
  * @Description  :
  * @FilePath     : \routes\homeStack.js
@@ -17,14 +17,14 @@ const screens = {
 	Home: {
 		screen: Home,
 		navigationOptions: {
-			title: "GameZone",
+			title: "Heart Sushi",
 			headerStyle: { backgroundColor: "lightblue" },
 		},
 	},
 	ReviewDetails: {
 		screen: ReviewDetails,
 		navigationOptions: {
-			title: "Review The Details",
+			title: "Page Details",
 		},
 	},
 };
