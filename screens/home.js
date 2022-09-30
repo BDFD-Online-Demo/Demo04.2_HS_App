@@ -2,7 +2,7 @@
  * @Date         : 2022-09-30 13:45:35
  * @Author       : BDFD,bdfd2005@gmail.com
  * @Github       : https://github.com/bdfd
- * @LastEditTime : 2022-09-30 13:52:46
+ * @LastEditTime : 2022-09-30 14:55:30
  * @LastEditors  : BDFD
  * @Description  :
  * @FilePath     : \screens\home.js
@@ -30,15 +30,39 @@ export default function Home({ navigation }) {
 		},
 		{
 			title: "About Us Page",
+			// rating: 4,
+			body: "What we do Our little story",
+			key: "2",
+			content1:
+				"Welcome to Heart Sushi we have been recognized as the most popular Japanese restaurant and “All You Can Eat” (AYCE) sushi buffet in Mississauga. A la carte menu also available at any time. We never closed and open 365 days a year.",
+			content2:
+				"We are located right at the major shopping centre “Heartland Town Centre” Which seating near by Highway 401.",
+			content3:
+				'Heart sushi has been recognized from within the community with awards such as Top 5 "all you can eat sushi" in Mississauga 2014, winner of "Yelpie" award for "most favorite sushi in Mississauga 2014" and "the best Asian food in Canada" from Asian Star TV Top 2',
+		},
+		{
+			title: "Menu & Discount Page",
 			rating: 4,
 			body: "This is About Us Page",
-			key: "2",
+			key: "3",
 		},
 		{
 			title: "Contact Us Page",
 			rating: 3,
 			body: "This is About Us Page",
-			key: "3",
+			key: "4",
+		},
+		{
+			title: "Online Order Page",
+			rating: 3,
+			body: "This is About Us Page",
+			key: "5",
+		},
+		{
+			title: "Online Reservation Page",
+			rating: 3,
+			body: "This is About Us Page",
+			key: "6",
 		},
 	]);
 
