@@ -1,14 +1,23 @@
-/* @Date         : 2022-09-16 16:02:15
+/*
+ * @Date         : 2022-09-30 13:45:35
  * @Author       : BDFD,bdfd2005@gmail.com
  * @Github       : https://github.com/bdfd
- * @LastEditTime : 2022-09-19 11:02:55
+ * @LastEditTime : 2022-09-30 13:52:46
  * @LastEditors  : BDFD
  * @Description  :
  * @FilePath     : \screens\home.js
  * Copyright (c) 2022 by BDFD, All Rights Reserved.
  */
+
 import React, { useState } from "react";
-import { View, Text, FlatList, TouchableOpacity } from "react-native";
+import {
+	View,
+	Text,
+	FlatList,
+	TouchableOpacity,
+	Image,
+	StyleSheet,
+} from "react-native";
 import { globalStyles } from "../assets/styles/global";
 
 export default function Home({ navigation }) {
@@ -35,16 +44,41 @@ export default function Home({ navigation }) {
 
 	return (
 		<View style={globalStyles.container}>
-			{/* <Text style={globalStyles.titleText}>Home Screens</Text> */}
+			<View style={styles.container}>
+				<Text style={styles.dummyText}>Heart Sushi App</Text>
+				<Image style={styles.logo} source={require("../assets/hslogo.jpg")} />
+			</View>
+			<View style={styles.empty}></View>
 			<FlatList
 				data={reviews}
 				renderItem={({ item }) => (
 					<TouchableOpacity
 						onPress={() => navigation.navigate("ReviewDetails", item)}>
-						<Text style={globalStyles.titleText}>{item.title}</Text>
+						<Text style={globalStyles.titleText}>Click to {item.title}</Text>
 					</TouchableOpacity>
 				)}
 			/>
 		</View>
 	);
 }
+
+const styles = StyleSheet.create({
+	container: {
+		// backgroundColor: "#fff",
+		alignItems: "center",
+		justifyContent: "center",
+	},
+	empty: {
+		margin: 32,
+	},
+	dummyText: {
+		margin: 16,
+		padding: 16,
+		borderWidth: 2,
+		borderColor: "red",
+	},
+	logo: {
+		width: 66,
+		height: 58,
+	},
+});
