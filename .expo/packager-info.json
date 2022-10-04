@@ -1,5 +1,5 @@
 {
-  "expoServerPort": 19000,
+  "expoServerPort": null,
   "packagerPort": 19000,
   "expoServerNgrokUrl": "https://9i-ntd.heartworld.demo04-2-hs-app.exp.direct",
   "packagerNgrokUrl": "https://9i-ntd.heartworld.demo04-2-hs-app.exp.direct",
